@@ -13,9 +13,9 @@ class KeyValue: Object {
     
     static var realm = KeyValue.getDefaultRealm()
     
-    dynamic var key = ""
-    dynamic var stringValue: String?
-    dynamic var dateValue: Date?
+    @objc dynamic var key = ""
+    @objc dynamic var stringValue: String?
+    @objc dynamic var dateValue: Date?
     let intValue = RealmOptional<Int>()
     let floatValue = RealmOptional<Float>()
     let doubleValue = RealmOptional<Double>()
